@@ -1,58 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - Engineering Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mathanesh Vellingiri Ramasamy</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="profile.jpg" alt="[Your Name]" class="profile-img">
-            <h1>Mathanesh Vellingiri Ramasamy</h1>
-            <h3>Master Thesis Intern - Volvo Group Trucks Technology</h3>
-            <p>MSc Systems, Control and Mechatronics at Chalmers University of Technology. Seeking opportunities in Automotive Software, Machine Learning and Robotics.</p>
-        </header>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Experienced in developing control algorithms for Articulated Heavy Vehicles and performing MIL/VIL testing. Proficient in MATLAB/Simulink for model-based development and simulation. Skilled in Python, C, Cpp, ROS, and Embedded Software Development. Past experience in the verification and validation of electric actuators (EOL testing, Component/Performance Testing and Functional/Communication Testing of e-actuators) and mechanical design of autonomous mobile robots. Knowledgeable in ISO 26262 standards.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects & Research</h2>
-            <div class="project">
-                <h3>[Project Title]</h3>
-                <p>[Brief project description. Include skills used, methodologies, results, or any publication details.]</p>
-            </div>
-            <!-- Duplicate the above div for additional projects -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>[Skill 1, e.g., MATLAB]</li>
-                <li>[Skill 2, e.g., Simulink]</li>
-                <li>[Skill 3, e.g., Python]</li>
-                <li>[Skill 4, e.g., Control Systems]</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-        </section>
-
-        <footer>
-            <p>© 2025 [Your Name]</p>
-        </footer>
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Mathanesh VR</a>
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
     </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-content" data-animate>
+      <h1>Hello, I’m<br/><span class="highlight">Mathanesh</span> Vellingiri</h1>
+      <p>Systems, Control &amp; Mechatronics Engineer</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section" data-animate>
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m currently a Master Thesis Intern at Volvo Group Trucks Technology, developing adaptive slip-based control algorithms for BEV combinations. Proficient in MATLAB/Simulink, Python, C/C++, ROS, and embedded software development. Past experience in electric actuator V&V, autonomous mobile robot design, and ISO 26262 standards.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-animate>
+      <div class="container">
+        <h2>Projects & Research</h2>
+        <div class="projects-grid">
+          <!-- Detailed project -->
+          <a href="projects/real_time_obstacle.html" class="project-card">
+            <img src="images/obstacle_thumb.jpg" alt="Real-Time Obstacle Avoidance" />
+            <div class="card-content">
+              <h3>Real-Time Obstacle Avoidance</h3>
+              <p>Python · DRL &amp; MPC</p>
+            </div>
+          </a>
+          <!-- Another detailed one -->
+          <a href="projects/road_segmentation.html" class="project-card">
+            <img src="images/road_thumb.jpg" alt="Road Image Segmentation" />
+            <div class="card-content">
+              <h3>Road Image Segmentation</h3>
+              <p>Python · PyTorch</p>
+            </div>
+          </a>
+          <!-- Placeholder cards -->
+          <div class="project-card empty">
+            <div class="card-content"><h3>More Projects Coming</h3></div>
+          </div>
+          <div class="project-card empty">
+            <div class="card-content"><h3>More Projects Coming</h3></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-animate>
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Python · C · C++ · MATLAB/Simulink</li>
+          <li>PyTorch · scikit-learn · NumPy · Matplotlib</li>
+          <li>ROS · Gazebo · OpenModelica</li>
+          <li>Embedded SW · Git · GCP · Solidworks · ANSYS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-animate>
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mathanesh.vr@outlook.com">mathanesh.vr@outlook.com</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://linkedin.com/in/Mathanesh-VR" target="_blank">Mathanesh-VR</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/Mathanesh" target="_blank">Mathanesh</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" data-animate>
+    <div class="container footer-inner">
+      <p>© 2025 Mathanesh Vellingiri Ramasamy</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
